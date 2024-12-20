@@ -1,6 +1,5 @@
 import React, { useRef, useState } from "react";
 import { FaAngleUp, FaAngleDown } from "react-icons/fa";
-// import { Typewriter } from "react-simple-typewriter";
 
 const FAQSection = () => {
     const contentRefs = useRef([]);

@@ -27,7 +27,6 @@ const Navbar = () => {
 
       <div className="bg-[#F5F0EE] py-4 px-6">
         <div className="container mx-auto flex justify-between items-center">
-          {/* <div className="text-xl font-bold text-gray-800">AREUM</div> */}
           <img src={Logo} alt="" className='w-24 h-24'/>
 
           <div className="hidden md:flex flex-grow mx-6">
@@ -36,7 +35,7 @@ const Navbar = () => {
               placeholder="Search..."
               className="w-full px-4 py-2 border border-gray-300 rounded-l-md focus:outline-none"
             />
-            <button className="px-4 py-2 bg-blue-600 text-white rounded-r-md hover:bg-blue-700">
+            <button className="px-4 py-2 bg-[#11273F] text-white rounded-r-md">
               <FiSearch />
             </button>
           </div>
@@ -70,7 +69,7 @@ const Navbar = () => {
             <FiUser className="text-gray-600 hover:text-gray-900" size={20} />
             <div className="relative">
               <FiShoppingCart className="text-gray-600 hover:text-gray-900" size={20} />
-              <span className="absolute -top-2 -right-2 bg-blue-600 text-white text-xs rounded-full px-1">
+              <span className="absolute -top-2 -right-2 bg-[#11273F] text-white text-xs rounded-full px-1">
                 0
               </span>
             </div>

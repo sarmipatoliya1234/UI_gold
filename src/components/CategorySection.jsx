@@ -52,7 +52,7 @@ const ShopByCategory = () => {
           <div
             key={category.id}
             className="category-card flex flex-col items-center rounded-lg transition p-4"
-            onClick={() => navigate("/product")}
+            onClick={() => navigate("/category")}
           >
             <img
               src={category.image}

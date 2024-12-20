@@ -21,7 +21,7 @@ const EngagementRingsPage = () => {
           already holds the crown for the most beloved gemstone, but add
           sustainability, cost-efficiency, and two more stones to the mix, and
           you have the perfect diamon...
-          <a href="#" className="text-blue-600 hover:underline">
+          <a href="#" className="text-[#11273F] hover:underline">
             Read more
           </a>
         </p>

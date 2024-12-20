@@ -1,5 +1,9 @@
 import React from "react";
 import Logo from '../assets/products/logo.svg'
+import Amex from '../assets/paymentLogo/Amex.svg'
+import MasterCard from '../assets/paymentLogo/MasterCard.svg'
+import Paypal from '../assets/paymentLogo/Paypal.svg'
+import Visa from '../assets/paymentLogo/Visa.svg'
 
 const Footer = () => {
   return (
@@ -56,10 +60,10 @@ const Footer = () => {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 py-4 flex flex-wrap justify-center items-center space-x-4 border-t border-gray-200">
-        <img src="/visa.png" alt="Visa" className="h-6" />
-        <img src="/paypal.png" alt="PayPal" className="h-6" />
-        <img src="/mastercard.png" alt="MasterCard" className="h-6" />
-        <img src="/amex.png" alt="AmEx" className="h-6" />
+        <img src={Visa} alt="Visa" className="h-10" />
+        <img src={Paypal} alt="PayPal" className="h-10" />
+        <img src={MasterCard} alt="MasterCard" className="h-10" />
+        <img src={Amex} alt="AmEx" className="h-10" />
       </div>
 
     </footer>

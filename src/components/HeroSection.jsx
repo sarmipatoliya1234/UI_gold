@@ -10,7 +10,7 @@ const JewelryBanner = () => {
         backgroundPosition: "center",
       }}
     >
-      <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8 absolute right-96 top-[20%]">
+      <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8 absolute md:right-96 md:top-[20%]">
         <div className="flex flex-col lg:flex-row items-center justify-between text-center">
           <div className="text-center">
             <h2 className="text-3xl font-semibold text-gray-800 my-4 unna-regular">

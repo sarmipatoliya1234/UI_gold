@@ -16,7 +16,7 @@ const JewelryStore = () => {
           Colored Diamonds
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3">
-          <div className="relative">
+          <div className="relative hidden lg:block md:block">
             <div className="relative">
               <img src={ringModalBanner} alt="" />
               <div className="space-y-4 absolute left-6 top-6 w-40">
@@ -39,7 +39,7 @@ const JewelryStore = () => {
           </div>
 
           <div className="relative bg-white rounded-lg shadow-sm overflow-hidden">
-            <Heart className="absolute top-2 right-14 text-gray-400 cursor-pointer hover:text-red-500 transition-colors bg-white rounded-full p-1" />
+            <Heart className="absolute top-2 md:right-14 right-9 text-gray-400 cursor-pointer hover:text-red-500 transition-colors bg-white rounded-full p-1" />
             <img
               src={blueDiamond}
               alt="Blue Diamond Ring"
@@ -69,7 +69,7 @@ const JewelryStore = () => {
           </div>
 
           <div className="relative bg-white rounded-lg shadow-sm overflow-hidden">
-            <Heart className="absolute top-2 right-14 text-gray-400 cursor-pointer hover:text-red-500 transition-colors bg-white rounded-full p-1" />
+            <Heart className="absolute top-2 md:right-14 right-9 text-gray-400 cursor-pointer hover:text-red-500 transition-colors bg-white rounded-full p-1" />
             <img
               src={yellowDiamond}
               alt="Yellow Diamond Ring"

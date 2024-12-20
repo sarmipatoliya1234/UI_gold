@@ -4,8 +4,13 @@ import sellerTwo from "../assets/products/sellerTwo.svg";
 import sellerThree from "../assets/products/sellerThree.svg";
 import sellerFour from "../assets/products/sellerFour.svg";
 import Faq from "./Faq";
+import { useLocation, useParams } from "react-router-dom";
+import RingDetail from "./RingDetail";
 
 const ProductPage = () => {
+  const { id } = useParams();
+  const location = useLocation();
+  const { name, image, rating, price, oldPrice } = location.state || {};
   return (
     <div className="p-4 md:p-8 container m-auto">
       <div className="text-sm text-gray-500 mb-4">
@@ -16,14 +21,14 @@ const ProductPage = () => {
         <a href="#" className="hover:underline">
           Engagement Rings
         </a>{" "}
-        &gt; Emerald Cut Lab Grown Diamond Halo Engagement Ring
+        &gt; {name}
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         <div>
           <div className="mb-4">
             <img
-              src={sellerOne}
+              src={image}
               alt="Main Product"
               className="w-full rounded-lg shadow-lg"
             />
@@ -50,14 +55,12 @@ const ProductPage = () => {
         </div>
 
         <div>
-          <h1 className="text-2xl font-bold mb-4">
-            Emerald Cut Lab Grown Diamond Halo Engagement Ring
-          </h1>
+          <h1 className="text-2xl font-bold mb-4">{name}</h1>
           <p className="text-xl font-semibold text-red-500 mb-2">
-            From USD $1,498.55
+            From USD ${price}
           </p>
-          <p className="text-gray-400 line-through mb-4">$1,763.00</p>
-          <p className="mb-4">⭐ 4.5 (1 review)</p>
+          <p className="text-gray-400 line-through mb-4">${oldPrice}</p>
+          <p className="mb-4">⭐ {rating} (1 review)</p>
 
           <div className="mb-4">
             <span className="font-semibold">Metal Type:</span>
@@ -65,7 +68,7 @@ const ProductPage = () => {
               {["10K", "14K", "18K", "PT"].map((type, idx) => (
                 <button
                   key={idx}
-                  className="px-3 py-1 border rounded hover:bg-gray-100"
+                  className="px-1 py-1 border rounded-full hover:bg-gray-100 bg-yellow-300"
                 >
                   {type}
                 </button>
@@ -106,6 +109,7 @@ const ProductPage = () => {
           </div>
         </div>
       </div>
+      <RingDetail />
       <Faq />
     </div>
   );

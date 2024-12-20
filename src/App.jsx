@@ -3,10 +3,11 @@ import { Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Newsletter from './components/Newsletter';
 import Footer from './components/Footer';
+import FooterDetail from './components/FooterDetail';
 import Home from './Home/Home';
-import ProductPage from './components/ProductPage';
 import "./App.css";
-// import Footer from './components/Footer';
+import RingsGrid from './components/ringGrid';
+import ProductPage from './components/ProductPage';
 
 function App() {
   return (
@@ -16,11 +17,13 @@ function App() {
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/product" element={<ProductPage />} />
+            <Route path="/category" element={<RingsGrid />} />
+            <Route path="/category/:id" element={<ProductPage />} />
           </Routes>
         </main>
         <Newsletter />
         <Footer />
+        <FooterDetail />
       </div>
     </div>
   );
